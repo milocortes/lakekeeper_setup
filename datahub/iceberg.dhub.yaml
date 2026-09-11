@@ -1,0 +1,18 @@
+source:
+  type: "iceberg"
+  config:
+    catalog:
+      polaris_catalog:
+        type: "rest"
+        uri: "http://localhost:8181/api/catalog"
+        warehouse: "quickstart_catalog"
+        credential: "root:s3cr3t"
+        scope: "PRINCIPAL_ROLE:ALL"
+        s3.access-key-id: "admin"
+        s3.secret-access-key: "password"
+        s3.region: "eu-east-1"
+        s3.endpoint: "http://127.0.0.1:9000"
+sink:
+  type: "datahub-rest"
+  config:
+    server: "http://localhost:8080"
