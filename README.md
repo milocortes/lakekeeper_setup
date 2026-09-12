@@ -28,10 +28,3 @@ export LAKEKEEPER__PG_ENCRYPTION_KEY="MySecretEncryptionKeyThatIBetterNotLoose"
 ./lakekeeper migrate
 ./lakekeeper serve
 ```
-
-
-
-```bash
-
-```
-

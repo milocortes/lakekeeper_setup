@@ -1,0 +1,241 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "be37b9f0280600a7a69b255a480011f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "77d3d6b3a97a90108ff94b20930ca7d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"creamos-warehouse\">Creamos Warehouse</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "38a37339d04c1cad362591c954cb3bcb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "201: Created\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "c33ef0bce92fcc7cccdbe45305f65026",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"crea-tabla\">Crea tabla</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "a58851e268cff9e86e1e68c09cab788e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "566a271fc83ff489ff8e8c325ddfc289",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "d00569e1e8c42b0929827b0e70edb148",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "7e0b305afcc43c5efa17844dfe3ab8e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='ad1b7d14-8949-9702-623a-53f9c3f55256'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;id&#92;&quot;:1,&#92;&quot;data&#92;&quot;:&#92;&quot;a&#92;&quot;},{&#92;&quot;id&#92;&quot;:2,&#92;&quot;data&#92;&quot;:&#92;&quot;b&#92;&quot;},{&#92;&quot;id&#92;&quot;:3,&#92;&quot;data&#92;&quot;:&#92;&quot;c&#92;&quot;}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;id&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;data&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "22195e5af35685f0fccb2d968d98baac",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"carga-otro-dataset\">Carga otro dataset</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "48f9ce6933b2bd65fba06745776b6bb9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "1e7f14c6193f0ff4f448861d8e9dc048",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='eed61214-21ae-5b4b-a8cc-63b2d280db67'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1125 Acuicultura&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:472.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.6017047583732756,&#92;&quot;density&#92;&quot;:0.1274748875697988,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.32875260654793,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1141 Pesca&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:304.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.5283702143610173,&#92;&quot;density&#92;&quot;:0.10681198792243934,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.5238247493410192,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1151 Servicios relacionados con la agricultura&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:269.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:0.9243944619320229,&#92;&quot;density&#92;&quot;:0.07430845264093122,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.1019446095631038,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1152 Servicios relacionados con la cr&#92;&#92;u00eda y explotaci&#92;&#92;u00f3n de animales&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:117.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:1.749908697909785,&#92;&quot;density&#92;&quot;:0.04423243416527902,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.6474090303781652,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1153 Servicios relacionados con el aprovechamiento forestal&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:21.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:3.397892756171645,&#92;&quot;density&#92;&quot;:0.026401363025561297,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.1515371246799229,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2111 Extracci&#92;&#92;u00f3n de petr&#92;&#92;u00f3leo y gas&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:17.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:4.004582462308612,&#92;&quot;density&#92;&quot;:0.020216324655474422,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.6384003966991352,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2121 Miner&#92;&#92;u00eda de carb&#92;&#92;u00f3n mineral&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:8.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:2.6827390771249995,&#92;&quot;density&#92;&quot;:0.023385460913913633,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.9227781540856471,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2122 Miner&#92;&#92;u00eda de minerales met&#92;&#92;u00e1licos&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:103.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:0.6698218438009302,&#92;&quot;density&#92;&quot;:0.04795278850051146,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.2803704973585486,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2123 Miner&#92;&#92;u00eda de minerales no met&#92;&#92;u00e1licos&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:381.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.06693827150983503,&#92;&quot;density&#92;&quot;:0.10313318536681979,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.5684872384006416,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2131 Servicios relacionados con la miner&#92;&#92;u00eda&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:53.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:3.912469537893385,&#92;&quot;density&#92;&quot;:0.02456372246306525,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:2.4335138077049945,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:null,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:null}]&quot;' data-total-rows='685119' data-total-columns='15' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Municipio&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;Actividad econ\u00f3mica&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;UE Unidades econ\u00f3micas&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;A\u00f1o Censal&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;diversity&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;ubiquity&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;mcp&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;eci&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;pci&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;density&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;coi&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;cog&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;rca&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;Entidad&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;A111A Producci\u00f3n bruta total (millones de pesos)&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "939a32083e49171d42c67dbf68c2df56",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "b10a87167e7964b573583470b8e35352",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='nWHF-0' random-id='5f092863-b9c9-8f49-dbb6-75e5f5165deb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1125 Acuicultura&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:472.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.6017047583732756,&#92;&quot;density&#92;&quot;:0.1274748875697988,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.32875260654793,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1141 Pesca&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:304.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.5283702143610173,&#92;&quot;density&#92;&quot;:0.10681198792243934,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.5238247493410192,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1151 Servicios relacionados con la agricultura&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:269.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:0.9243944619320229,&#92;&quot;density&#92;&quot;:0.07430845264093122,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.1019446095631038,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1152 Servicios relacionados con la cr&#92;&#92;u00eda y explotaci&#92;&#92;u00f3n de animales&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:117.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:1.749908697909785,&#92;&quot;density&#92;&quot;:0.04423243416527902,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.6474090303781652,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 1153 Servicios relacionados con el aprovechamiento forestal&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:21.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:3.397892756171645,&#92;&quot;density&#92;&quot;:0.026401363025561297,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.1515371246799229,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2111 Extracci&#92;&#92;u00f3n de petr&#92;&#92;u00f3leo y gas&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:17.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:4.004582462308612,&#92;&quot;density&#92;&quot;:0.020216324655474422,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.6384003966991352,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2121 Miner&#92;&#92;u00eda de carb&#92;&#92;u00f3n mineral&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:8.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:2.6827390771249995,&#92;&quot;density&#92;&quot;:0.023385460913913633,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.9227781540856471,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2122 Miner&#92;&#92;u00eda de minerales met&#92;&#92;u00e1licos&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:103.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:0.6698218438009302,&#92;&quot;density&#92;&quot;:0.04795278850051146,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:1.2803704973585486,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2123 Miner&#92;&#92;u00eda de minerales no met&#92;&#92;u00e1licos&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:381.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:-0.06693827150983503,&#92;&quot;density&#92;&quot;:0.10313318536681979,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:0.5684872384006416,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN},{&#92;&quot;Municipio&#92;&quot;:&#92;&quot;001 Abal&#92;&#92;u00e1&#92;&quot;,&#92;&quot;Actividad econ&#92;&#92;u00f3mica&#92;&quot;:&#92;&quot;Rama 2131 Servicios relacionados con la miner&#92;&#92;u00eda&#92;&quot;,&#92;&quot;UE Unidades econ&#92;&#92;u00f3micas&#92;&quot;:0,&#92;&quot;A&#92;&#92;u00f1o Censal&#92;&quot;:2023,&#92;&quot;diversity&#92;&quot;:21.0,&#92;&quot;ubiquity&#92;&quot;:53.0,&#92;&quot;mcp&#92;&quot;:0.0,&#92;&quot;eci&#92;&quot;:-0.664857181913679,&#92;&quot;pci&#92;&quot;:3.912469537893385,&#92;&quot;density&#92;&quot;:0.02456372246306525,&#92;&quot;coi&#92;&quot;:-0.7209930885459944,&#92;&quot;cog&#92;&quot;:2.4335138077049945,&#92;&quot;rca&#92;&quot;:0.0,&#92;&quot;Entidad&#92;&quot;:NaN,&#92;&quot;A111A Producci&#92;&#92;u00f3n bruta total (millones de pesos)&#92;&quot;:NaN}]&quot;' data-total-rows='685119' data-total-columns='15' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Municipio&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;Actividad econ\u00f3mica&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;UE Unidades econ\u00f3micas&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;A\u00f1o Censal&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;diversity&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;ubiquity&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;mcp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;eci&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;pci&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;density&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;coi&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;cog&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;rca&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;Entidad&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;A111A Producci\u00f3n bruta total (millones de pesos)&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "1fae69fabcb349af630679d8445a1529",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"creamos-warehouse-en-aws\">Creamos Warehouse en AWS</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "0015e3e1665c02ba79ab870168d30d72",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "2f115ae2186b3cb971afda1ab567b653",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "48e46ddd456575de8a019f493a932209",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "1e6b943b8b680d596553d68569cef367",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "cfba7e9aed5b900f9ce7464aa1832bdb",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

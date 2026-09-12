@@ -19,7 +19,6 @@ def _():
     # Change 'lakekeeper' if you are not running on "docker compose" (f. ex. 'localhost' if Lakekeeper is running locally).
     CATALOG_URL = "http://localhost:8181/catalog"
     MANAGEMENT_URL = "http://localhost:8181/management"
-
     return CATALOG_URL, MANAGEMENT_URL, requests
 
 
@@ -36,7 +35,7 @@ def _(MANAGEMENT_URL, requests):
     response = requests.post(f"{MANAGEMENT_URL}/v1/warehouse",
                   json={
                     # Name of the new warehouse
-                    "warehouse-name": "juan",
+                    "warehouse-name": "cepcan",
                     # Physical location of this warehouse
                     "storage-profile": {
                         "type": "s3",
@@ -86,7 +85,7 @@ def _(CATALOG_URL):
     import pyarrow.parquet as pq
     import pyarrow as pa
 
-    DEMO_WAREHOUSE = "juan"
+    DEMO_WAREHOUSE = "cepcan"
 
     catalog = RestCatalog(
         name="my_catalog",
@@ -94,8 +93,6 @@ def _(CATALOG_URL):
         uri=CATALOG_URL,
         token="dummy",
     )
-
-
     return RestCatalog, catalog, pa, pd
 
 
@@ -105,7 +102,6 @@ def _(catalog):
     test_namespace = ("pyiceberg_namespace",)
     if test_namespace not in catalog.list_namespaces():
         catalog.create_namespace(test_namespace)
-
     return (test_namespace,)
 
 
@@ -130,8 +126,6 @@ def _(catalog, pa, pd, test_namespace):
     )
 
     table.append(pa_df)
-
-
     return (test_table,)
 
 
@@ -139,7 +133,6 @@ def _(catalog, pa, pd, test_namespace):
 def _(catalog, test_table):
     # Read data
     catalog.load_table(test_table).scan().to_pandas()
-
     return
 
 
