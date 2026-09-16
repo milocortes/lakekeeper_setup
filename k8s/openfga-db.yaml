@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: openfga-db
+  labels:
+    app: openfga-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: openfga-db
+  template:
+    metadata:
+      labels:
+        name: openfga-db
+        app: openfga-db
+    spec:
+      containers:
+        - args:
+            - -c
+            - max_connections=500
+          env:
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "postgres"
+          image: postgres:17
+          livenessProbe:
+            exec:
+              command:
+                - pg_isready -U postgres -p 5432 -d postgres
+            failureThreshold: 2
+            initialDelaySeconds: 10
+            periodSeconds: 2
+            timeoutSeconds: 10
+          name: openfga-db
+          ports:
+            - containerPort: 5432
+              protocol: TCP
+          volumeMounts:
+            # Using volume mount for PostgreSQL's data folder as it is otherwise not writable
+            - name: postgres-data-openfga
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: postgres-data-openfga
+          emptyDir: {}
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: openfga-db
+  name: openfga-db
+spec:
+  selector:
+    app: openfga-db
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+  type: ClusterIP

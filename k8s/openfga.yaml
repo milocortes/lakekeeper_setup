@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openfga
+  labels:
+    app: keycloak
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keycloak
+  template:
+    metadata:
+      labels:
+        name: openfga
+        app: keycloak
+    spec:
+      containers:
+        - args:
+            - run
+          env:
+            - name: OPENFGA_AUTHN_METHOD
+              value: oidc
+            - name: OPENFGA_AUTHN_OIDC_AUDIENCE
+              value: openfga
+            - name: OPENFGA_AUTHN_OIDC_ISSUER
+              value: http://keycloak:8080/realms/iceberg
+            - name: OPENFGA_AUTHN_OIDC_ISSUER_ALIASES
+              value: http://keycloak:8080/realms/iceberg
+            - name: OPENFGA_CACHE_CONTROLLER_ENABLED
+              value: "true"
+            - name: OPENFGA_CHECK_ITERATOR_CACHE_ENABLED
+              value: "true"
+            - name: OPENFGA_CHECK_QUERY_CACHE_ENABLED
+              value: "true"
+            - name: OPENFGA_DATASTORE_ENGINE
+              value: postgres
+            - name: OPENFGA_DATASTORE_MAX_IDLE_CONNS
+              value: "100"
+            - name: OPENFGA_DATASTORE_MAX_OPEN_CONNS
+              value: "200"
+            - name: OPENFGA_DATASTORE_URI
+              value: postgres://postgres:postgres@openfga-db:5432/postgres?sslmode=disable
+            - name: OPENFGA_HTTP_TLS_ENABLED
+              value: "false"
+            - name: OPENFGA_PLAYGROUND_ENABLED
+              value: "false"
+          image: openfga/openfga:v1.19
+          livenessProbe:
+            exec:
+              command:
+                - /usr/local/bin/grpc_health_probe
+                - -addr=openfga:8081
+            failureThreshold: 3
+            periodSeconds: 5
+            timeoutSeconds: 30
+          name: openfga
+          ports:
+            - containerPort: 8081
+              protocol: TCP
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: keycloak
+  name: openfga
+spec:
+  selector:
+    app: keycloak
+  ports:
+    - protocol: TCP
+      port: 8081
+      targetPort: 8081
+  type: ClusterIP
+  

@@ -1,0 +1,80 @@
+services:
+  rustfs:
+    container_name: rustfs-storage
+    ports:
+        - 9003:9000
+        - 9001:9001
+    volumes:
+        - /mnt/rustfs/data:/data
+    environment:
+        - RUSTFS_ACCESS_KEY=rustfsadmin
+        - RUSTFS_SECRET_KEY=rustfsadmin
+        - RUSTFS_CONSOLE_ENABLE=true
+    image: rustfs/rustfs:latest
+    command: --address :9000 --console-enable --server-domains example.com
+        --access-key rustfsadmin --secret-key rustfsadmin /data
+    networks:
+      iceberg_net:
+  openfga-db:
+    image: postgres:17
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    command: -c 'max_connections=500'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -p 5432 -d postgres"]
+      interval: 2s
+      timeout: 10s
+      retries: 2
+      start_period: 10s
+    ports:
+      - "2346:5432"
+    networks:
+      iceberg_net:
+
+  openfga-migrate:
+    image: openfga/openfga:v1.14
+    command: migrate
+    environment:
+      - OPENFGA_DATASTORE_ENGINE=postgres
+      - OPENFGA_DATASTORE_URI=postgres://postgres:postgres@openfga-db:5432/postgres?sslmode=disable
+    networks:
+      iceberg_net:
+    depends_on:
+      openfga-db:
+        condition: service_healthy
+
+  openfga:
+    depends_on:
+      openfga-db:
+        condition: service_healthy
+      openfga-migrate:
+        condition: service_completed_successfully
+    image: openfga/openfga:v1.14
+    command: run
+    environment:
+      - OPENFGA_DATASTORE_ENGINE=postgres
+      - OPENFGA_DATASTORE_URI=postgres://postgres:postgres@openfga-db:5432/postgres?sslmode=disable
+      - OPENFGA_DATASTORE_MAX_OPEN_CONNS=200
+      - OPENFGA_DATASTORE_MAX_IDLE_CONNS=100
+      - OPENFGA_PLAYGROUND_ENABLED=false
+      - OPENFGA_AUTHN_METHOD=oidc
+      - OPENFGA_AUTHN_OIDC_ISSUER=http://localhost:30080/realms/iceberg
+      #- OPENFGA_AUTHN_OIDC_ISSUER=http://localhost:30080/realms/iceberg
+      - OPENFGA_AUTHN_OIDC_ISSUER_ALIASES=http://localhost:30080/realms/iceberg
+      - OPENFGA_AUTHN_OIDC_AUDIENCE=openfga
+      - OPENFGA_HTTP_TLS_ENABLED=false
+      - OPENFGA_CACHE_CONTROLLER_ENABLED=true
+      - OPENFGA_CHECK_QUERY_CACHE_ENABLED=true
+      - OPENFGA_CHECK_ITERATOR_CACHE_ENABLED=true
+    networks:
+      iceberg_net:
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/grpc_health_probe", "-addr=openfga:8081"]
+      interval: 5s
+      timeout: 30s
+      retries: 3
+    ports:
+      - "35082:8081"
+networks:
+  iceberg_net:
+

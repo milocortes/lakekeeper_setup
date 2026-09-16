@@ -1,0 +1,20 @@
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: openfga-migrate
+  labels:
+    app: keycloak
+spec:
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: migrate
+          image: openfga/openfga:v1.19 # Match your server version
+          args: ["migrate"]
+          env:
+            - name: OPENFGA_DATASTORE_ENGINE
+              value: postgres
+            - name: OPENFGA_DATASTORE_URI
+              value: postgres://postgres:postgres@openfga-db:5432/postgres?sslmode=disable
